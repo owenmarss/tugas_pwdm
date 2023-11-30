@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="200dp"
+    android:paddingHorizontal="50dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/panjang_label_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukan panjang persegi panjang: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingStart="10dp"
+        android:paddingVertical="8dp" />
+
+    <EditText
+        android:id="@+id/panjang_input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/panjang_label_text"
+        android:hint="Contoh: (... cm)"/>
+
+    <TextView
+        android:id="@+id/lebar_label_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:paddingVertical="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/panjang_input_text"
+        android:text="Masukan lebar persegi panjang: " />
+
+    <EditText
+        android:id="@+id/lebar_input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lebar_label_text"
+        android:hint="Contoh: (... cm)" />
+
+    <Button
+        android:id="@+id/hitung_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lebar_input_text"
+        android:text="Gas Ngitung!"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
